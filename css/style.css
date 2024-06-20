@@ -4038,7 +4038,9 @@ input[type="button"].btn-block {
 .card-img-bottom {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 100%; }
+  width: 70%;
+  align-self: center;
+}
 
 .card-img,
 .card-img-top {
@@ -8405,7 +8407,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -8721,7 +8723,7 @@ h1, h2, h3, h4, h5,
             margin-bottom: 0;
             padding-right: 15px; }
           .owl-carousel.home-slider .slider-item .slider-text .absolute p {
-            color: rgba(255, 255, 255, 0.4); }
+            color: rgba(255, 255, 255); }
           @media (max-width: 767.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .absolute {
               position: relative;
@@ -9289,7 +9291,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  padding: 5em 0;
   background: black;
   position: relative; }
   .ftco-footer .ftco-footer-logo {
@@ -9306,7 +9308,7 @@ textarea.form-control {
     .ftco-footer .ftco-footer-widget ul li a {
       color: rgba(255, 255, 255, 0.5); }
       .ftco-footer .ftco-footer-widget ul li a span {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
         font-size: 14px; }
   .ftco-footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
@@ -10197,3 +10199,5 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
