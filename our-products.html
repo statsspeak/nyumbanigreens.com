@@ -1,188 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products</title>
 
-  <link rel="shortcut icon" href="images/nav logo (1).png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/nav logo (1).png" />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <script defer src="products.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- <div class="container" >
+    <header>
+      <nav class="navbar">
+        <section class="nav-first">
+          <svg
+            class="menu-icon"
+            width="16"
+            height="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div class="logo">
+            <img src="images/navbarlogo.png" alt="sneakers logo" />
+            <a class="navbar-brand" href="index.html">Nyumbani <span>Greens</span></a>
+          </div>
+          <div class="backdrop"></div>
+          <div class="nav-links">
+            <svg
+              class="close-icon"
+              width="14"
+              height="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <a href="our-products.html">Collections</a>
+            <a href="index.html">About us</a>
+            <a href="index.html">Our Offerings</a>
+            <a href="index.html">Team</a>
+            <a href="index.html">Contact</a>
+          </div>
+        </section>
+        <section class="nav-second">
+          <div class="cart">
+            <img
+              class="cart-icon"
+              src="images/icon-cart.svg"
+              alt="cart icon"
+            />
+            <div class="cart-container">
+              <div class="cart-title">Cart</div>
+              <div class="cart-items empty">
+                <p class="cart-empty">Your cart is empty</p>
+              </div>
+              <button class="checkout empty">Checkout</button>
+            </div>
+            <div class="cart-count">
+              <span class="qty">0</span>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="images/image-avatar.png" alt="avatar" />
+          </div>
+        </section>
+      </nav>
+    </header>
+  </div> -->
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-
-  <link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-
-  <style>
-    @media (min-width: 992px) {
-      .col-lg-20 {
-        flex: 0 0 20%;
-        max-width: 20%;
-      }
-    }
-    </style>
-    <title>Our Products</title>
-</head>
-<body>
-  <div class="row justify-content-center no-gutters">
-    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-      <h2 class="mb-2">Our Offerings</h2>
-      <p> We offer convenient variety of nutrient-rich African Indigenous vegetables and staple foods.</p>
+    <!-- Listings -->
+    <div class="container-lg">
+      <div class="title">Our Listings</div>
+      <div class="listProduct"></div>
     </div>
-  </div>
 
-  <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/1.png" class="card-img-top" alt="Githeri">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Githeri</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description<span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">Fried ready to eat (office lunch) & Preboiled Githeri</p>
-          </div>
-          <div>
-            <p class="card-text"><strong>Price: Ksh 350.00</strong></p>
-                      <a href="https://wa.me/p/7577491812290684/254757884803" class="btn btn-primary" target="_blank">Order Now</a>
-          </div>
+    <script>
+      let products = null;
+      // get datas from file json
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          products = data;
+          addDataToHTML();
+        });
 
-
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/2.png" class="card-img-top" alt="Yellow beans">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Yellow beans</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description<span class="glyphicon glyphicon-user pull-right"></span></p>
-                          <p class="card-text mb-0 dropdown-menu p-3 z-3">Precooked yellow beans</p>
-          </div>
-                      <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 300</strong></p>
-                        <a href="https://wa.me/p/7674529209244076/254757884803" class="btn btn-primary  align-self-end" target="_blank">Order Now</a>
-          </div>
-
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/3.png" class="card-img-top" alt="Pumpkin leaves">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Pumpkin leaves</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">Pumpkin/Susa vegetables are a powerhouse of nutrients. They are rich in vitamins, minerals and antioxidants.</p>
-          </div>
-          <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/24947960631514569/254757884803" class="btn btn-primary align-self-end" target="_blank">Order Now</a>
-                  </div>
-          </div>
+        function truncateText(text, maxLength) {
+            if (text.length > maxLength) {
+              return text.substring(0, maxLength) + "...";
+            }
+          return text;
+        }
 
 
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/foods.png" class="card-img-top" alt="Kunde/Cowpeas">
-                  <div class="card-body">
-                      <h5 class="card-title mb-0">Kunde/Cowpeas</h5>
-          <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">We have both precooked and fermented Kunde veggies. They are known to be antioxidants, immune boosters & contain minerals such as Calcium, phosphorus & iron.</p>
-                      <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/7327485317371525/254757884803" class="btn btn-primary align-self-end" target="_blank">Order Now</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/5.png" class="card-img-top" alt="Mitoo/Miroo/Slenderleaf">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Mitoo/Miroo/Slender leaf</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">Mitoo vegetables are very welcome. We have both precooked & fermented vegetables.</p>
-          </div>
-          <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/7375353795905223/254757884803" class="btn btn-primary" target="_blank">Order Now</a>
-          </div>
+      function addDataToHTML() {
+        // remove datas default from HTML
+        let listProductHTML = document.querySelector(".listProduct");
 
+        // add new datas
+        if (products != null) {
+          // if has data
+          products.forEach((product) => {
+            let newProductCard = document.createElement("div");
+            // newProductCard.classList.add("row");
+            const truncatedDescription = truncateText(product.description, 55);
+            // newProductCard.innerHTML = `<div class="card-img" style="background-image: url(${product.image});" ></div>
+            //         <div class="card-info">
+            //           <p class="text-title">${product.name}</p>
+            //           <p class="text-body">${truncatedDescription}</p>
+            //         </div>
+            //         <div class="card-footer">
+            //         <span class="text-title">$${product.price}</span>
+            //         <div class="card-button">
+            //           <svg class="svg-icon" viewBox="0 0 20 20">
+            //           <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            //           <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            //           <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            //           </svg>
+            //         </div>
+            //         </div>`;
 
-                  </div>
-              </div>
-          </div>
-    <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/4.png" class="card-img-top" alt="Sagaa">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Sagaa/Saga</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3">Sagaa/Spider plant is a highly recommended vegetable for pregnant and lactating women.It's very rich in potassium.This makes it very effective in regulating blood pressure levels in the body.</p>
-          </div>
-          <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/7375353795905223/254757884803" class="btn btn-primary" target="_blank">Order Now</a>
-          </div>
+            newProductCard.innerHTML = `
+            <div class="col l4 m8 s12 offset-m2 offset-l4">
+    <div class="product-card">
+      <div class="card  z-depth-4">
+        <div class="card-image">
+          <a href="#" class="btn-floating btn-large price waves-effect waves-light brown darken-3">5 €</a>
+          <!-- alternative image links:
+http://i58.photobucket.com/albums/g249/Landry_Bete/dessert14_zpsg6u4skv6.jpg
+https://www.dropbox.com/s/15xhr85exkhusgi/dessert14.jpg?raw=1 -->
+          <img src="https://res.cloudinary.com/landry-bete/image/upload/v1488769144/dessert14_trnhnj.jpg" alt="product-img">
+          <span class="card-title"><span>Macaron</span></span>
+        </div>
+        <ul class="card-action-buttons">
+          <li><a class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+          </li>
+          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+          </li>
+          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+          </li>
+        </ul>
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <p>
+                <strong>Description:</strong> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+              </p>
+            </div>
 
-
-                  </div>
-              </div>
           </div>
-    <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/7.png" class="card-img-top" alt="Terere">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Terere/Amarantha/Mchicha veggies</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">We have precooked  Terere veggies.Terere vegetables are rich in iron, vitamin A, essential minerals such as magnesium, Calcium, Phosphorus,Zinc, Manganese, copper and Potassium.</p>
+          <div class="row">
+            <div style="width: 95%; margin: auto;">
+              <div class="chip">Dessert</div>
+              <div class="chip">French</div>
+              <div class="chip">Sweet</div>
+              <div class="chip">Chocolate</div>
+              <div class="chip"><a href="#">More...</a></div>
+            </div>
           </div>
-          <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/7375353795905223/254757884803" class="btn btn-primary" target="_blank">Order Now</a>
-          </div>
-
-
-                  </div>
-              </div>
-          </div>
-    <div class="col-sm-6 col-md-6 col-lg-3 ftco-animate mb-4">
-              <div class="card border border-0 rounded-1 h-100 ">
-                  <img src="foods/9.png" class="card-img-top" alt="Mrenda">
-                  <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h5 class="card-title mb-0">Mrenda</h5>
-            <p href="#" class="dropdown-toggle" data-toggle="dropdown">Description <span class="glyphicon glyphicon-user pull-right"></span></p>
-                      <p class="card-text mb-0 dropdown-menu p-3 z-3">Precooked Mrenda.</p>
-          </div>
-          <div>
-            <p class="card-text align-self-end"><strong>Price: Ksh 400.00</strong></p>
-                      <a href="https://wa.me/p/7375353795905223/254757884803" class="btn btn-primary" target="_blank">Order Now</a>
-          </div>
-
-
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-</body>
+    </div>
+  </div>`;
+
+            listProductHTML.appendChild(newProductCard);
+          });
+        }
+      }
+    </script>
+  </body>
 </html>
-
-
-

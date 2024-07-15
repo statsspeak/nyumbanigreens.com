@@ -42,6 +42,14 @@ body {
   margin: auto;
 }
 
+.nav-container{
+  width: 900px;
+  margin: auto;
+  max-width: 90vw;
+  text-align: center;
+  padding-top: 10px;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
