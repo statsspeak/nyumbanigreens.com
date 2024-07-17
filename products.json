@@ -2,96 +2,96 @@
   {
     "id": 1,
     "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "price": 3.5,
+    "image": "https://www.kaluhiskitchen.com/wp-content/uploads/2015/11/african-food-blogs_kenyan-food-blogs_kaluhiskitchen.com_sage-and-garlic-githeri.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 2,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Yellow Beans",
+    "price": 3.0,
+    "image": "https://www.thespruceeats.com/thmb/FqJBW4tQhFPwNnyM3bujGyvluNk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/home-baked-yellow-eye-beans-h-5afecd7604d1cf003618066f.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 3,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Pumpkin Leaves",
+    "price": 4.0,
+    "image": "https://greenspoon.co.ke/wp-content/uploads/2022/02/Greenspoon-Pumpkin-Leaves-Mlango-Farm-1.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 4,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Kunde/CowPeas",
+    "price": 4.0,
+    "image": "https://cdn.britannica.com/15/122515-050-54A158DA/Cowpea.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 5,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Slenderleaf / Mitoo / Miroo",
+    "price": 4.0,
+    "image": "https://greenspoon.co.ke/wp-content/uploads/2024/06/Greenspoon-slender-leaf.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 6,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Sagaa/ Saga",
+    "price": 4.0,
+    "image": "https://greenspoon.co.ke/wp-content/uploads/2024/03/greenspooon-frozen-isle-sagaa-1-of-1-2-scaled.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 7,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Terere /  Amantha / Machicha",
+    "price": 4.0,
+    "image": "https://rukminim2.flixcart.com/image/850/1000/km6mxe80/plant-seed/m/y/c/2000-jhar-katwa-data-green-amaranthus-desi-chaul-seeds-chauli-original-imagf5c99n6f4txu.jpeg?q=20&crop=false",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 8,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "name": "Mrenda",
+    "price": 3.5,
+    "image": "https://img-global.cpcdn.com/recipes/295cb7c7c80d614d/680x482cq70/mrendajute-mallow-recipe-main-photo.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 9,
     "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "price": 3.5,
+    "image": "https://greenspoon.co.ke/wp-content/uploads/2022/02/Greenspoon-Spinach-Mlango-Farm-1.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 10,
     "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "price": 3.5,
+    "image": "https://greenspoon.co.ke/wp-content/uploads/2022/02/Greenspoon-Kales-Sukuma-Wiki-Mlango-Farm.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 11,
     "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "price": 4.0,
+    "image": "https://wordpress.wbur.org/wp-content/uploads/2019/02/cabbage-kathy-gunst01-1000x666.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
   {
     "id": 12,
     "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "price": 4.0,
+    "image": "https://static.libertyprim.com/files/offres/vend-chou-kale-spain-1774-3626-large.jpg?1558958583",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   },
@@ -99,31 +99,7 @@
     "id": 13,
     "name": "Githeri",
     "price": 350,
-    "image": "images/githeri.jpg",
-    "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
-    "category": "Main Course"
-  },
-  {
-    "id": 14,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
-    "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
-    "category": "Main Course"
-  },
-  {
-    "id": 15,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
-    "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
-    "category": "Main Course"
-  },
-  {
-    "id": 16,
-    "name": "Githeri",
-    "price": 350,
-    "image": "images/githeri.jpg",
+    "image": "https://madec.edu.au/wp-content/uploads/2021/05/brassica_245873182.jpg",
     "description": "Githeri is a Kenyan traditional meal of maize and beans. It is a common meal in Kenya and is eaten by a number of Kenyan communities. It is a simple, filling and nutritious meal that is easy to prepare.",
     "category": "Main Course"
   }
