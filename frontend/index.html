@@ -227,7 +227,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	</section>
 
 	<section class="ftco-section testimony-section bg-light" id="offerings">
@@ -391,7 +391,7 @@
         </div>
 
 			                      <p class="text-center mt-5">
-									  <a href="product-page.html" class="btn btn-primary  align-self-end">Order Now</a>
+									  <a href="product-page.html" class="btn btn-primary  align-self-end">Browse More Products</a>
 															<!-- <a href="https://wa.me/c/254757884803" class="btn btn-primary mt-2 text-center font-weight-bold" target="_blank">Browse Entire Catalog</a> -->
 								  </p>
 
@@ -631,6 +631,86 @@
 		<!-- loader -->
 		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+		<!-- Products List Script -->
+		<script>
+      let products = null;
+      // get datas from file json
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          products = data;
+          addDataToHTML();
+        });
+
+        function truncateText(text, maxLength) {
+            if (text.length > maxLength) {
+              return text.substring(0, maxLength) + "...";
+            }
+          return text;
+        }
+
+
+      function addDataToHTML() {
+        // remove datas default from HTML
+        let listProductHTML = document.querySelector(".row");
+
+        // add new datas
+        if (products != null) {
+					// console.log(products)
+          // if has data
+          products.forEach((product) => {
+            let newProductCard = document.createElement("div");
+            // newProductCard.classList.add("row");
+            const truncatedDescription = truncateText(product.description, 55);
+
+            newProductCard.innerHTML = `
+            <a href="product-page.html">
+            <div class="col l4 m8 s12 offset-m2 offset-l4">
+              <div class="product-card">
+              <div class="card  z-depth-4">
+              <div class="card-image">
+          <a href="#" class="btn-floating btn-large price waves-effect waves-light brown darken-3">${product.price}€</a>
+          <img src=${product.image} alt="product-img">
+          <span class="card-title"><span>${product.name}</span></span>
+        </div>
+        <ul class="card-action-buttons">
+          <li><a class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+          </li>
+          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+          </li>
+          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+          </li>
+        </ul>
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <p>
+                <strong>Description:</strong> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+              </p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div style="width: 95%; margin: auto;">
+              <div class="chip">Dessert</div>
+              <div class="chip">French</div>
+              <div class="chip">Sweet</div>
+              <div class="chip">Chocolate</div>
+              <div class="chip"><a href="#">More...</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>`;
+
+            listProductHTML.appendChild(newProductCard);
+          });
+        }
+      }
+    </script>
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
