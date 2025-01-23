@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'arialrounded';
+	src: url('/fonts/arialroundedmtbold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@theme {
+	--color-brand-yellow: oklch(0.84 0.17 87.04);
+	--color-brand-green: oklch(0.79 0.24 137.9);
+}
